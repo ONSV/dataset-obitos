@@ -61,14 +61,5 @@ geo_municipios_ponto <- geo_final |>
 
 # Export ------------------------------------------------------------------
 
-st_write(
-    geo_final,
-    "geo_municipios.gpkg",
-    append = FALSE
-)
-
-st_write(
-    geo_municipios_ponto,
-    "geo_municipios_ponto.gpkg",
-    append = FALSE
-)
+save(geo_municipios, file = "data/geo_municipios_poly.rda")
+save(geo_municipios_ponto, file = "data/geo_municipios_pontos.rda")

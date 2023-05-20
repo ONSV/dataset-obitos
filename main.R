@@ -61,5 +61,5 @@ geo_municipios_ponto <- geo_final |>
 
 # Export ------------------------------------------------------------------
 
-save(geo_municipios, file = "data/geo_municipios_poly.rda")
+save(geo_final, file = "data/geo_municipios_poly.rda")
 save(geo_municipios_ponto, file = "data/geo_municipios_pontos.rda")

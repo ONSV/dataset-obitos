@@ -57,7 +57,7 @@ geo_final <- geo_municipios |>
 
 geo_municipios_ponto <- geo_final |> 
     st_make_valid() |> 
-    st_centroid()
+    st_point_on_surface()
 
 # Export ------------------------------------------------------------------
 
